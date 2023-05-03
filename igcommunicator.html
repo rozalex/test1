@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>igCummunicator</title>
+ 	<script type="text/javascript">
+
+	function onPageLoad() {
+		//alert("waiting");
+		window.parent.postMessage({ isracard_sale_params: document.location.search}, '*');
+	}
+
+ </script>
+ </head>
+ <body onload="onPageLoad();">
+ </body>
+ </html>
